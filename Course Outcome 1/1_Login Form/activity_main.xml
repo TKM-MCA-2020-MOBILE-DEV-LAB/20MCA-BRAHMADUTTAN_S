@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="100dp"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/quicksand_bold"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/usernm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="19pt"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Email/Phone number"/>
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="1dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/quicksand_bold"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="19pt"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Password"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="48dp"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="forgot Password?"/>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/teal_200"
+        android:shadowColor="@color/black"
+        android:layout_marginLeft="150dp"
+        android:text="Login" />
+
+</LinearLayout>
