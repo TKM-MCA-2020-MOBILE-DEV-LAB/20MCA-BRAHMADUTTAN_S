@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBE9F6"
+    android:textAlignment="center"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <TextView
+        android:id="@+id/opp"
+        android:layout_width="337dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#E4E2E2"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textSize="38sp"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toTopOf="@+id/gridlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="343dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/ac"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="clear"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="AC"
+            app:layout_column="0"
+            app:layout_row="5"
+            tools:text="AC" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="clear"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="C"
+            app:layout_column="2"
+            app:layout_row="5"
+            tools:text="C" />
+
+        <Button
+            android:id="@+id/n9"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="nine"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="9"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="equal"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="="
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/per"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="per"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="%"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="div"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="÷"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="sub"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="−"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="mul"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="×"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="add"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="+"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/n0"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="zero"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="0"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/n1"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="one"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="1"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/n2"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="two"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="2"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/n3"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="three"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="3"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/n4"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="four"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="4"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/n5"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="five"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="5"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/n6"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="six"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="6"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/n7"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="seven"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="7"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/n8"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:onClick="eight"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:text="8"
+            app:layout_column="1"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
